@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 
 const Home = memo(() => {
-  return <h1>Hello World</h1>;
+  return <h1>Home</h1>;
 });
 
 export default Home;
