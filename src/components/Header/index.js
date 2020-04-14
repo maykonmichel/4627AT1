@@ -1,7 +1,8 @@
 import React, { memo } from 'react';
-import { AppBar, Button, IconButton, makeStyles, Toolbar, Typography } from '@material-ui/core';
-
+import { AppBar, Button, IconButton, Toolbar, Typography } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+
+import useStyles from './useStyles';
 
 const Header = memo(() => {
   const classes = useStyles();
@@ -22,17 +23,5 @@ const Header = memo(() => {
     </div>
   );
 });
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
 
 export default Header;
