@@ -38,7 +38,7 @@ export default memo(() => {
   const onSubmit = useCallback(async (values, { setSubmitting }) => {
     setSubmitting(true);
     try {
-      const message = await methods('dichotomousSearch', values);
+      const message = await methods('bisection', values);
       setResponse({
         message,
         isOpen: true,
