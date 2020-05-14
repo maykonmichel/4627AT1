@@ -36,7 +36,7 @@ export default memo(() => {
   const onSubmit = useCallback(async (values, { setSubmitting }) => {
     setSubmitting(true);
     try {
-      const message = await methods('aureaSection', values);
+      const message = await methods('fibonacciSearch', values);
       setResponse({
         message,
         isOpen: true,
