@@ -1,5 +1,5 @@
 export default async ({ f, a, b, e }) =>
-  new Promise((resolve, reject) => {
+  new Promise((resolve) => {
     
     let n = 0;
     for (let i = 1; i < 9999; i++) {
@@ -26,7 +26,6 @@ export default async ({ f, a, b, e }) =>
         }
     }
 
-    if (b - a >= e) return reject(new Error('Não foi possível determinar o mínimo da função'));
     return resolve((a+b)/2);
   });
 
