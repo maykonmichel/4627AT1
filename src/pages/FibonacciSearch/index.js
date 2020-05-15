@@ -12,7 +12,6 @@ const initialValues = {
   f: '',
   a: 0,
   b: 0,
-  d: 0,
   e: 0,
 };
 
@@ -26,7 +25,6 @@ const validationSchema = yup.object().shape({
   f: yup.string().label('Função').required(),
   a: yup.number().label('a').required(),
   b: yup.number().label('b').required(),
-  d: yup.number().label('Δ').required().moreThan(0),
   e: yup.number().label('ε').required().moreThan(0),
 });
 
@@ -109,18 +107,6 @@ export default memo(() => {
                   name="b"
                   label="b"
                   value={values.b}
-                  onChange={handleChange}
-                  fullWidth
-                />
-              </Grid>
-              <Grid item xs={3}>
-                <TextField
-                  type="number"
-                  error={!!errors.d}
-                  helperText={errors.d}
-                  name="d"
-                  label="Δ"
-                  value={values.d}
                   onChange={handleChange}
                   fullWidth
                 />
