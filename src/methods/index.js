@@ -17,4 +17,4 @@ const methods = {
 };
 
 export default (method, { f, ...args }) =>
-methods[method]({ fn: f, f: (x) => evaluate(f, { x }), ...args });
+  methods[method]({ fn: f, f:(x) => evaluate(f, { x }), ...args });
