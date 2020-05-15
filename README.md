@@ -1,3 +1,15 @@
+# 1º trabalho - Programação não linear: monovariável
+
+## Alunos
+
+- Beatriz Tavares - 181022011
+- Jamilly Souza - 181020416
+- Maykon Michel - 181022656
+
+Acesso em: https://pnl-monovariavel-4627at1.herokuapp.com/
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
